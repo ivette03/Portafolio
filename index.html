@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <title>Ivette</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#inicio">Home</li></a>
+            <li><a href="#about-me">Sobre Ivette</li></a>
+            <li><a href="#proyectos">Proyectos</li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="dibujo">
+            <!--orejas-->
+            <div class="oreja1"></div>
+            <div class="oreja2"></div>
+            <div class="oreja3"></div>
+            <!--ojos-->
+            <div class="eyes-right">
+                <div class="right-black"></div>
+            </div>
+            <div class="eyes-left">
+                <div class="left-black"></div>
+            </div>
+            <!--boca-->
+            <div class="boca">
+                <div class="raya1"></div>
+                <div class="raya2"></div>
+                <div class="raya3"></div>
+                <div class="raya4"></div>
+            </div>
+            <div class="slime">
+                <div class="slime1"></div>
+                <div class="slime2"></div>
+                <div class="slime3"></div>
+            </div>
+        </div>
+
+        <!--section home-->
+        <section class="home " id="inicio">
+            <div class="home-content content"> 
+                <h1 class="texto">hola, soy <span>Ivette.</span></h1>
+                <p class="text-about">Me gusta crear cosas.</p>
+                <p>Soy desarrolladora de software<br>Tengo un fuerte interes en el desarrollo full-stack. </p>
+            </div>
+            <div class="button-email">
+                <a class="link-email" href="mailto:ibetanahy@gmail.com ">Dime hola
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor">
+                        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+                      </svg>
+                      
+                  </a>
+            </div>
+        </section>
+        <!--fin section-->
+
+
+    
+        <!--about me-->
+        <section class="about" id="about-me">
+            <div class="grid-container">
+                <div>
+                    <h2>/sobre mi</h2>
+                    <p>Actualmente estoy estudiando en el instituto superior Guayaquil<br>
+                     en horario nocturno y he trabajado en proyetos web.<br>
+                     Aqui algunas tecnologias con las que he trabajado
+                     </p>
+                </div>
+                  
+                <div class="img-ivette ">
+                      <picture>
+                         <source
+                              sizes="600w"
+                              srcset="img/foto.avif 1920w"    
+                              type="image/avif"                             
+                              >
+                          <source
+                              sizes="600w"
+                              srcset="img/foto.webp 1920w"                            
+                              type="image/webp"          
+                              >
+                          <source
+                              sizes="600w"
+                              srcset="img/foto.jpeg 1920w"                            
+                              type="image/jpeg">
+                              <!--en caso que no soporto webp o avif cargara automaticamente el jpg-->
+                              <img  loading="lazy" decoding="async" src="img/foto.jpeg" lazyalt="imagen" width="300" height="300">
+                        </picture>
+                </div>
+            </div>
+            <div class="list">
+                <ul class="lenguajes">
+                    <li>Django</li>
+                    <li>Boostrap</li>
+                </ul>
+                <ul class="lenguajes">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                </ul>
+                </div>
+                <p>Fuera de la programación, me gusta tocar guitarra y la fotografía.</p>
+            </div>      
+        </section>
+    <!--fin section-->
+      <!--seccion proyectos-->
+      <section  id="proyectos" > 
+            <div class="container">
+                <h2>/Proyectos</h2> 
+             <div class="project">        
+                <div class="card"  id="proyecto1">
+                   <div class="contenido-card">
+                    <a href="https://github.com/ivette03/Dona-tu-tiempo.git">
+                        <img src="img/ico-github.ico" width="35px" height="35px">
+                     </a>
+                     <p>
+                        Proyecto emblemático del instituto que implicó la colaboración
+                        en el desarrollo de una landing page para la
+                        Fundación 'Dona tu tiempo'. También contribuí a la creación 
+                        de una aplicación web para la gestión eficiente de voluntarios 
+                        y profesionales.
+                     </p>
+                   </div>
+                </div>
+               <div>
+            </div>
+                <div class="card"  id="proyecto2">
+                    <div  class="contenido-card">
+                        <a href="https://github.com/ivette03/Dona-tu-tiempo.git" >
+                            <img src="img/ico-github.ico" width="35px" height="35px">
+                         </a>
+                        <p>Gestión de inventario y generación de facturas</p>
+                        <p>Desrrolle un proyecto personal un sistema para administrar inventarios y
+                        generar facturas en formato PDF.</p>
+                         
+                    </div>
+                </div>
+                <div class="card"  id="proyecto3" >
+                    <a href="#">
+                        <img src="img/ico-github.ico" width="35px" height="35px">
+                    </a>
+                    
+
+                </div>
+              </div>
+            </div>
+           </section>
+           <footer class="footer">
+            <p>Contruido y diseñado por Ivette Cascante</p>
+            <p>Todos los derechos reservados.&copy;</p>
+           </footer>
+<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+/* Estilo básico para el fondo espacial */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.space {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Estilo para las estrellas */
+.star {
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.star:nth-child(1) {
+    top: 30%;
+    left: 20%;
+    animation: blink 1s infinite;
+}
+
+.star:nth-child(2) {
+    top: 50%;
+    left: 80%;
+    animation: blink 1.5s infinite;
+}
+
+.star:nth-child(3) {
+    top: 70%;
+    left: 50%;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo para los planetas */
+.planet {
+    width: 80px;
+    height: 80px;
+    background-color: #ffcc66;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    animation: rotatePlanet 10s linear infinite;
+}
+
+.ring {
+    width: 120px;
+    height: 15px;
+    border: 2px solid #ffcc66;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotateRing 10s linear infinite;
+}
+
+@keyframes rotatePlanet {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateRing {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
