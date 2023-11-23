@@ -13,7 +13,10 @@ a{
 /* Estilos generales del contenedor */
 .container{
     width: 100%;
-    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    
+    padding: 20px;
 }
 
 /* Estilos para títulos de nivel 1 */
@@ -72,6 +75,7 @@ h2{
     margin: 0 auto;
     margin-bottom: 1rem;
     border-radius: 1rem;
+    height: 200px;
 }
 
 /* Estilos responsivos para pantallas de al menos 768px de ancho */
@@ -522,20 +526,21 @@ ul{
 }
 .contenido-card{
     margin-top: 12rem;
-    padding:5px;   
+    padding:5px;  
+    line-height: 1.8rem;
     text-align: center;
 }
 
 #proyecto1{
     background-image: url('../img/project1.png');
     background-repeat: no-repeat;
-    background-size: 100% 40%;
+    background-size: 100% 30%;
     background-position:top;
     opacity: 0;
     transform: translateY(-40px);
     transition: 1s ease-out;
-    margin-left: 2rem;
-    padding: 1.5rem;
+    padding: 1.8rem;
+    height: 700px;
 }
 
 #proyecto1.visible{
@@ -546,13 +551,13 @@ ul{
 #proyecto2{
     background-image: url('../img/project2.png');
     background-repeat: no-repeat;
-    background-size: 100% 40%;
+    background-size: 100% 30%;
     background-position: top;
     opacity: 0;
     transform: translateY(-30px);
     transition: 1.5s ease-out;
-    margin-left: 2rem;
-    padding: 1.5rem;
+    padding: 1.8rem;
+    height: 700px;
 }
 
 #proyecto2.visible{
@@ -561,11 +566,15 @@ ul{
 }
 
 #proyecto3{
+    background-image: url('../img/project3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-position: top;
     opacity: 0;
     transform: translateY(-20px);
     transition: 1.8s ease-out;
-    margin-left: 2rem;
-    padding: 1.5rem;
+    padding: 1.8rem;
+    height: 700px;
    
 }
 
@@ -580,5 +589,12 @@ ul{
 .footer p{
     font-size: 0.8rem;
     text-align: center;
+    
+}
+#icono-github{
+   margin-bottom: 10px;
+}
+#icono-github:hover{
+    transform: scale(1.6);
     
 }
